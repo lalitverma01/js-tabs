@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tabs</title>
+</head>
+
+<body class="overflow">
+    <section class="d-flex align-item justify-content justify-item min-h-100 bg-color">
+        <div class="container">
+            <h1 class="heading">Tabs</h1>
+            <div class="tabs">
+                <div class="tab-parent">
+                    <button class="button active" onclick="openTab(event, 'tab-1')">Tab-1</button>
+                    <button class="button" onclick="openTab(event, 'tab-2')">Tab-2</button>
+                    <button class="button" onclick="openTab(event, 'tab-3')">Tab-3</button>
+                </div>
+                <div class="content active" id="tab-1">
+                    <p class="para">Massa, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt
+                        magnis dis odio at. Viverra a, id
+                        amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor
+                        maecenas scelerisque eu
+                        orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus.
+                        Orci, egestas porta
+                        nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                    <p class="para-2">Massa, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam.
+                        Tincidunt
+                        magnis dis odio at. Viverra a, id
+                        amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor
+                        maecenas scelerisque eu
+                        orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus.
+                        Orci, egestas porta
+                        nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                </div>
+                <div class="content" id="tab-2">
+                    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quia, sit,
+                        perferendis culpa rem dolorum nostrum laudantium at praesentium dolore iure voluptas? Placeat
+                        enim
+                        nobis voluptas hic inventore veniam, delectus quae aspernatur aut illo repudiandae non fuga
+                        maiores
+                        accusantium maxime officia. Explicabo earum modi, iste consectetur quae velit perferendis
+                        molestias
+                        tempora nisi tempore itaque illo iure, neque corrupti, harum numquam consequatur natus quod
+                        repellat
+                        magni.</p>
+                    <p class="para-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, accusantium
+                        necessitatibus distinctio at ut autem, animi assumenda dicta commodi voluptate excepturi
+                        quaerat. Ad
+                        tenetur, doloribus sed eligendi dolorum, natus quia autem magni, fugit nesciunt doloremque amet
+                        blanditiis.</p>
+                </div>
+                <div class="content" id="tab-3">
+                    <p class="para">A paragraph is a series of sentences that are organized and coherent, and are all
+                        related to a
+                        single topic. Almost
+                        every piece of writing you do that is longer than a few sentences should be organized into
+                        paragraphs. This is because
+                        paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the
+                        reader
+                        see the organization
+                        of the essay and grasp its main points. </p>
+                    <p class="para-2">A paragraph is a series of sentences that are organized and coherent, and are all
+                        related to a
+                        single topic. Almost
+                        every piece of writing you do that is longer than a few sentences should be organized into
+                        paragraphs. This is because
+                        paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the
+                        reader
+                        see the organization
+                        of the essay and grasp its main points. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openTab(event, tabId) {
+            const tabButtons = document.querySelectorAll('.button');
+            const tabContents = document.querySelectorAll('.content');
+
+            tabButtons.forEach(button => button.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            event.currentTarget.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
