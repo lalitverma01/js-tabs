@@ -23,6 +23,7 @@
 .bg-color {
     background-color: #F6F6F6;
 }
+
 .overflow {
     overflow: hidden;
 }
@@ -46,11 +47,11 @@
     overflow: hidden;
 }
 
-hr {
+/* hr {
     border: 1px solid #000000;
     opacity: 10%;
     margin: 13px 25px 25px 0px;
-}
+} */
 
 .para {
     font-family: "Inter", sans-serif;
@@ -85,7 +86,7 @@ hr {
 .tab-parent {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #E5E5E5;
     margin-bottom: 20px;
 }
 
@@ -103,7 +104,7 @@ hr {
 }
 
 .button.active {
-    color: #007BFF;
+    color: #000000;
     font-weight: bold;
     border-bottom: 2px solid #007BFF;
 }
