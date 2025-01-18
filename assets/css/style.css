@@ -85,7 +85,6 @@
 
 .tab-parent {
     display: flex;
-    justify-content: center;
     border-bottom: 1px solid #E5E5E5;
     margin-bottom: 20px;
 }
