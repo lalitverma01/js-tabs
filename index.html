@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Tabs</title>
+    <title>js-tabs</title>
 </head>
 
 <body class="overflow">
@@ -13,10 +13,12 @@
         <div class="container">
             <h1 class="heading">Tabs</h1>
             <div class="tabs">
-                <div class="tab-parent">
+                <div class="tab-parent d-flex gap-22">
                     <button class="button active" onclick="openTab(event, 'tab-1')">Tab-1</button>
-                    <button class="button" onclick="openTab(event, 'tab-2')">Tab-2</button>
-                    <button class="button" onclick="openTab(event, 'tab-3')">Tab-3</button>
+                    <div class="d-flex gap-30">
+                        <button class="button" onclick="openTab(event, 'tab-2')">Tab-2</button>
+                        <button class="button" onclick="openTab(event, 'tab-3')">Tab-3</button>
+                    </div>
                 </div>
                 <div class="content active" id="tab-1">
                     <p class="para">Massa, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt
